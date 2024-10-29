@@ -8,6 +8,40 @@
     <title>Work with SWAPI</title>
   </head>
   <body>
+    <main>
+      <section class="section-star-wars">
+        <h1 class="section-star-wars__title">Кого или что будем искать?</h1>
+
+        <form
+          class="section-star-wars__form"
+          action="index.html"
+          name="star-wars-search"
+        >
+          <label>
+            <select class="section-star-wars__select" name="entity">
+              <option value="people">Людей</option>
+              <option value="planets">Планеты</option>
+              <option value="films">Фильмы</option>
+              <option value="starships">Космические корабли</option>
+            </select>
+          </label>
+
+          <label
+            ><input
+              class="section-star-wars__input"
+              type="number"
+              name="identifier"
+              placeholder="1"
+          /></label>
+
+          <button class="section-star-wars__btn">Вперед!</button>
+        </form>
+
+        <div class="loader hidden"></div>
+        <div class="error"></div>
+        <div class="star-wars-details"></div>
+      </section>
+    </main>
     <script src="./assets/scripts/index.js"></script>
   </body>
 </html>
